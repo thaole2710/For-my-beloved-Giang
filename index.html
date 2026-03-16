@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gửi Giang ❤️</title>
+    <title>Gửi Giang của em ❤️</title>
     <style>
-        /* Toàn bộ nền màu xanh dương nhạt */
+        /* Toàn bộ nền màu đỏ */
         body {
-            background-color: #e3f2fd;
-            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #9B0F06;
+            font-family: 'Nunito', Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -18,32 +18,32 @@
             padding: 20px;
         }
 
-        /* Khung giới thiệu màu be */
+        /* Khung giới thiệu màu hồng */
         .intro-box {
-            background-color: #f5f5dc;
+            background-color: #FF7070;
             padding: 40px;
             border-radius: 25px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
             max-width: 500px;
             text-align: center;
             line-height: 1.6;
-            border: 1px solid #e0e0d1;
+            border: 1px solid #ffffff;
             margin-bottom: 30px;
         }
 
         h1 {
-            color: #1e88e5;
+            color: #FEFFD3;
             margin-bottom: 20px;
         }
 
         p {
-            color: #555;
+            color: #FEFFD3;
             font-size: 1.1rem;
         }
 
-        /* Nút bấm phát nhạc màu xanh dương */
+        /* Nút bấm phát nhạc màu hồng */
         .play-btn {
-            background-color: #1e88e5;
+            background-color: #FF7070;
             color: white;
             border: none;
             padding: 15px 35px;
@@ -56,7 +56,7 @@
         }
 
         .play-btn:hover {
-            background-color: #1565c0;
+            background-color: #FF7070;
             transform: translateY(-2px);
         }
 
@@ -86,12 +86,12 @@
 
             if (audio.paused) {
                 audio.play();
-                btn.innerText = "Đang phát gửi Giang... ♪";
-                btn.style.backgroundColor = "#43a047"; // Đổi sang màu xanh lá khi đang phát
+                btn.innerText = "gửi anh... ♪";
+                btn.style.backgroundColor = "#FEFFD3"; // Đổi sang hồng khi đang phát
             } else {
                 audio.pause();
                 btn.innerText = "Tiếp tục nghe";
-                btn.style.backgroundColor = "#1e88e5";
+                btn.style.backgroundColor = "#FEFFD3";
             }
         }
     </script>
