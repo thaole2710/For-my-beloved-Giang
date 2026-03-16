@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gửi Giang của em ❤️</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
-        /* Toàn bộ nền màu xanh dương nhạt (Theo yêu cầu ban đầu của bạn) */
+        /* Nền màu D53E0F */
         body {
-            background-color: #e3f2fd; 
+            background-color: #D53E0F;
             font-family: 'Nunito', sans-serif;
             display: flex;
             flex-direction: column;
@@ -19,46 +19,51 @@
             padding: 20px;
         }
 
-        /* Khung giới thiệu màu be */
+        /* Khung màu FFF2D0 */
         .intro-box {
-            background-color: #f5f5dc; 
+            background-color: #FFF2D0;
             padding: 40px;
             border-radius: 25px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             max-width: 500px;
             text-align: center;
             line-height: 1.6;
-            border: 1px solid #e0e0d1;
             margin-bottom: 30px;
         }
 
+        /* H1 màu D53E0F, in đậm */
         h1 {
-            color: #1e88e5; /* Màu xanh đậm hơn để nổi bật */
+            color: #D53E0F;
+            font-weight: 800; /* Rất đậm */
             margin-bottom: 20px;
+            font-size: 2rem;
         }
 
+        /* Text màu D53E0F, in thường */
         p {
-            color: #444;
-            font-size: 1.1rem;
+            color: #D53E0F;
+            font-weight: 400; /* In thường */
+            font-size: 1.15rem;
         }
 
-        /* Nút bấm phát nhạc màu xanh dương */
+        /* Nút màu nền E36A6A, chữ FFF2D0 in thường */
         .play-btn {
-            background-color: #1e88e5;
-            color: white;
+            background-color: #E36A6A;
+            color: #FFF2D0;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400; /* In thường */
             border: none;
-            padding: 15px 35px;
+            padding: 15px 40px;
             border-radius: 50px;
-            font-size: 1rem;
-            font-weight: bold;
+            font-size: 1.1rem;
             cursor: pointer;
-            box-shadow: 0 5px 15px rgba(30, 136, 229, 0.3);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
         }
 
         .play-btn:hover {
             transform: translateY(-2px);
-            background-color: #1565c0;
+            filter: brightness(1.1);
         }
 
         .play-btn:active {
@@ -88,11 +93,9 @@
             if (audio.paused) {
                 audio.play();
                 btn.innerText = "Đang gửi anh... ♪";
-                btn.style.backgroundColor = "#43a047"; // Đổi sang màu xanh lá khi đang phát cho dễ nhận biết
             } else {
                 audio.pause();
                 btn.innerText = "Tiếp tục nghe";
-                btn.style.backgroundColor = "#1e88e5";
             }
         }
     </script>
