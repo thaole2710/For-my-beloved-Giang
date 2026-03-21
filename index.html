@@ -55,6 +55,7 @@
             font-weight: 400;
             font-size: 0.95rem;
             line-height: 1.6;
+            white-space: pre-wrap; /* Giữ định dạng xuống dòng từ file README */
         }
 
         /* Phần chọn cảm xúc */
@@ -100,9 +101,7 @@
 
     <div class="daily-box">
         <div class="date-title" id="displayDate"></div>
-        <div class="note-text">
-            Em cũng muốn ăn bánh kem matcha đậu đỏ nữaaaa~~ 😙 hôm nay Hoàng Giang hãy cười nhiều hơn hôm qua nha~ 🌸
-        </div>
+        <div class="note-text">Đang tải lời nhắn cho anh...</div>
     </div>
 
     <button class="play-btn" id="mainBtn" onclick="handleMainMusic()">Bấm ở đây nè anh</button>
@@ -111,10 +110,22 @@
     <audio id="emoAudio"></audio>
 
     <script>
-        // Tự động cập nhật ngày tháng
+        // 1. Tự động cập nhật ngày tháng
         const now = new Date();
         const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         document.getElementById("displayDate").innerText = now.toLocaleDateString('vi-VN', options);
+
+        // 2. Tự động lấy nội dung từ README.md
+        fetch('README.md')
+            .then(response => response.text())
+            .then(data => {
+                // Đưa nội dung từ README vào khung note-text
+                document.querySelector(".note-text").innerText = data;
+            })
+            .catch(error => {
+                console.error('Lỗi lấy file:', error);
+                document.querySelector(".note-text").innerText = "Hôm nay Hoàng Giang hãy cười thật nhiều nha~ 🌸";
+            });
 
         function handleMainMusic() {
             var audio = document.getElementById("mainAudio");
