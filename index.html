@@ -1,133 +1,133 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gửi Giang của em ❤️</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            /* Hình nền có lớp phủ màu để không bị chói */
-            background: linear-gradient(rgba(213, 62, 15, 0.85), rgba(213, 62, 15, 0.85)), url('background.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            font-family: 'Nunito', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi Giang của em ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /* Hình nền có lớp phủ màu để không bị chói */
+            background: linear-gradient(rgba(213, 62, 15, 0.85), rgba(213, 62, 15, 0.85)), url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Nunito', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
 
-        /* Khung 1: Lời nhắn cố định */
-        .intro-box {
-            background-color: #FFF2D0;
-            padding: 30px;
-            border-radius: 25px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            max-width: 500px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
+        /* Khung 1: Lời nhắn cố định */
+        .intro-box {
+            background-color: #FFF2D0;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            max-width: 500px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-        /* Khung 2: Note hằng ngày */
-        .daily-box {
-            background-color: #FFF2D0;
-            padding: 25px;
-            border-radius: 25px;
-            max-width: 500px;
-            text-align: center;
-            margin-bottom: 25px;
-            border: 2px dashed #D53E0F;
-        }
+        /* Khung 2: Note hằng ngày */
+        .daily-box {
+            background-color: #FFF2D0;
+            padding: 25px;
+            border-radius: 25px;
+            max-width: 500px;
+            text-align: center;
+            margin-bottom: 25px;
+            border: 2px dashed #D53E0F;
+        }
 
-        h1, .date-title {
-            color: #D53E0F;
-            font-weight: 800;
-            margin: 0 0 15px 0;
-        }
+        h1, .date-title {
+            color: #D53E0F;
+            font-weight: 800;
+            margin: 0 0 15px 0;
+        }
 
-        p, .note-text {
-            color: #D53E0F;
-            font-weight: 400;
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
+        p, .note-text {
+            color: #D53E0F;
+            font-weight: 400;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
 
-        /* Phần chọn cảm xúc */
-        .emotion-text { font-size: 0.9rem; margin-top: 15px; color: #D53E0F; font-weight: 700; }
-        .emotion-btns { display: flex; gap: 15px; justify-content: center; margin-top: 10px; }
-        .emo-btn {
-            background: #E36A6A;
-            border: none;
-            font-size: 1.8rem;
-            padding: 10px;
-            border-radius: 15px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .emo-btn:hover { transform: scale(1.1); }
+        /* Phần chọn cảm xúc */
+        .emotion-text { font-size: 0.9rem; margin-top: 15px; color: #D53E0F; font-weight: 700; }
+        .emotion-btns { display: flex; gap: 15px; justify-content: center; margin-top: 10px; }
+        .emo-btn {
+            background: #E36A6A;
+            border: none;
+            font-size: 1.8rem;
+            padding: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .emo-btn:hover { transform: scale(1.1); }
 
-        /* Nút phát nhạc chính */
-        .play-btn {
-            background-color: #E36A6A;
-            color: #FFF2D0;
-            border: none;
-            padding: 15px 40px;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-    </style>
+        /* Nút phát nhạc chính */
+        .play-btn {
+            background-color: #E36A6A;
+            color: #FFF2D0;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
 
-    <div class="intro-box">
-        <h1>Gửi Giang của em ❤️</h1>
-        <p>Giang ơi, cố lên! 1, 2, 1, 2... Em ở đây mà! 🏃‍♂️💨<br>Nhìn xem, em vẫn ở đây với anh nè! ✌️✨ Cố thêm 1 ngày, kiên nhẫn thêm 1 ngày anh nha! Everything happens for a reason~ </p>
-        
-        <div class="emotion-text">Hôm nay Hoàng Giang cảm thấy thế nào?</div>
-        <div class="emotion-btns">
-                        <button class="emo-btn" onclick="playEmo('happy.mp3')" title="hôm nay toẹt vời~">😊</button>
-            <button class="emo-btn" onclick="playEmo('sad.mp3')" title="bé ơi anh buồn">🥺</button>
-            <button class="emo-btn" onclick="playEmo('tired.mp3')" title="huhu anh mệt~~~~">😴</button>
-        </div>
-    </div>
+    <div class="intro-box">
+        <h1>Gửi Giang của em ❤️</h1>
+        <p>Giang ơi, cố lên! 1, 2, 1, 2... Em ở đây mà! 🏃‍♂️💨<br>Nhìn xem, em vẫn ở đây với anh nè! ✌️✨ Cố thêm 1 ngày, kiên nhẫn thêm 1 ngày anh nha! Everything happens for a reason~ </p>
+        
+        <div class="emotion-text">Hôm nay Hoàng Giang cảm thấy thế nào?</div>
+        <div class="emotion-btns">
+            <button class="emo-btn" onclick="playEmo('happy.mp3')" title="hôm nay toẹt vời~">😊</button>
+            <button class="emo-btn" onclick="playEmo('sad.mp3')" title="bé ơi anh buồn">🥺</button>
+            <button class="emo-btn" onclick="playEmo('tired.mp3')" title="huhu anh mệt~~~~">😴</button>
+        </div>
+    </div>
 
-    <div class="daily-box">
-        <div class="date-title" id="displayDate"></div>
-        <div class="note-text">
-            Em cũng muốn ăn bánh kem matcha đậu đỏ nữaaaa~~ 😙 hôm nay Hoàng Giang hãy cười nhiều hơn hôm qua nha~ 🌸
-        </div>
-    </div>
+    <div class="daily-box">
+        <div class="date-title" id="displayDate"></div>
+        <div class="note-text">
+            Em cũng muốn ăn bánh kem matcha đậu đỏ nữaaaa~~ 😙 hôm nay Hoàng Giang hãy cười nhiều hơn hôm qua nha~ 🌸
+        </div>
+    </div>
 
-    <button class="play-btn" id="mainBtn" onclick="handleMainMusic()">Bấm ở đây nè anh</button>
+    <button class="play-btn" id="mainBtn" onclick="handleMainMusic()">Bấm ở đây nè anh</button>
 
-    <audio id="mainAudio"><source src="voice.mp3.mp3" type="audio/mpeg"></audio>
-    <audio id="emoAudio"></audio>
+    <audio id="mainAudio"><source src="voice.mp3.mp3" type="audio/mpeg"></audio>
+    <audio id="emoAudio"></audio>
 
-    <script>
-        // Tự động cập nhật ngày tháng
-        const now = new Date();
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        document.getElementById("displayDate").innerText = now.toLocaleDateString('vi-VN', options);
+    <script>
+        // Tự động cập nhật ngày tháng
+        const now = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById("displayDate").innerText = now.toLocaleDateString('vi-VN', options);
 
-        function handleMainMusic() {
-            var audio = document.getElementById("mainAudio");
-            var btn = document.getElementById("mainBtn");
-            if (audio.paused) { audio.play(); btn.innerText = "Đang gửi anh... ♪"; }
-            else { audio.pause(); btn.innerText = "Nghe nữa hông?"; }
-        }
+        function handleMainMusic() {
+            var audio = document.getElementById("mainAudio");
+            var btn = document.getElementById("mainBtn");
+            if (audio.paused) { audio.play(); btn.innerText = "Đang gửi anh... ♪"; }
+            else { audio.pause(); btn.innerText = "Nghe nữa hông?"; }
+        }
 
-        function playEmo(file) {
-            var audio = document.getElementById("emoAudio");
-            audio.src = file;
-            audio.play();
-        }
-    </script>
+        function playEmo(file) {
+            var audio = document.getElementById("emoAudio");
+            audio.src = file;
+            audio.play();
+        }
+    </script>
 </body>
 </html>
