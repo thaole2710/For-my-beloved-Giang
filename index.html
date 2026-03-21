@@ -115,17 +115,19 @@
         const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         document.getElementById("displayDate").innerText = now.toLocaleDateString('vi-VN', options);
 
-        // 2. Tự động lấy nội dung từ README.md
-        fetch('README.md')
-            .then(response => response.text())
-            .then(data => {
-                // Đưa nội dung từ README vào khung note-text
-                document.querySelector(".note-text").innerText = data;
-            })
-            .catch(error => {
-                console.error('Lỗi lấy file:', error);
-                document.querySelector(".note-text").innerText = "Hôm nay Hoàng Giang hãy cười thật nhiều nha~ 🌸";
-            });
+        // 2. TỰ ĐỘNG LẤY NỘI DUNG TỪ README.MD (Đã thêm mã chống nghẽn cache)
+    // ============================================================
+    fetch('README.md?t=' + new Date().getTime()) // <--- ĐÂY LÀ CHỖ THÊM MỚI
+        .then(response => response.text())
+        .then(data => {
+            // Đưa nội dung từ README vào khung note-text
+            document.querySelector(".note-text").innerText = data;
+        })
+        .catch(error => {
+            console.error('Lỗi lấy file:', error);
+            document.querySelector(".note-text").innerText = "Hôm nay Hoàng Giang hãy cười thật nhiều nha~ 🌸";
+        });
+    // ============================================================
 
         function handleMainMusic() {
             var audio = document.getElementById("mainAudio");
