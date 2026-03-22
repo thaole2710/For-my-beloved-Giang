@@ -1,1 +1,1 @@
-Em cũng muốn ăn bánh kem matcha đậu đỏ nữaaa~~ 😙 hôm nay Hoàng Giang hãy cười nhiều hơn hôm qua nha~ 🌸
+Em cũng yêu anh 3000 nữa 🧑‍🚀 Hôm nay anh thế nào? Nhớ anh quá~ Hi vọng anh có 1 ngày vui vẻ nhaaaa 🌸
