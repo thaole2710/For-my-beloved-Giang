@@ -1,1 +1,1 @@
-Em cũng yêu anh 3000 nữa 🧑‍🚀 Hôm nay anh thế nào? Nhớ anh quá~ Hi vọng anh có 1 ngày vui vẻ nhaaaa 🌸
+em mong ngày hôm nay của anh sẽ tốt hơn hôm qua, vui hơn hôm qua, và vẫn còn yêu em như hôm đầu tiên 🌸
