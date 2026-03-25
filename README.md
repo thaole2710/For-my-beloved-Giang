@@ -1,1 +1,1 @@
-em mong ngày hôm nay của anh sẽ tốt hơn hôm qua, vui hơn hôm qua, và vẫn còn yêu em như hôm đầu tiên 🌸
+Hôm nay của anh thế nào? có suôn sẻ hơn hôm qua không? Em mong anh vạn sự thuận lợi. Hôm nay của em thật sự áp lực, nhưng k sao em làm được~ 🌸
